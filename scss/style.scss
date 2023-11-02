@@ -65,16 +65,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  padding: 2em;
 
   div {
-    width: 48%;
-    img {
-      width: 100%;
-
-      object-fit: cover;
-    }
+    @include grid($widht: 25%);
   }
+
   div:nth-child(1) img {
     @include floating(
       $border: none,

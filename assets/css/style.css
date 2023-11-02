@@ -198,7 +198,7 @@ header div div img {
   box-shadow: rgba(0, 0, 0, 0.1) 8px 9px 4px 4px;
   border: 1px solid white;
   transform: scale3d(1.1, 1.1, 1.1);
-  transition: tranform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 header div div img:hover {
   box-shadow: none;
@@ -216,19 +216,21 @@ main {
   padding: 2em;
 }
 main div {
-  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 23%;
 }
 main div img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 main div:nth-child(1) img {
   border-radius: 10px;
   box-shadow: rgba(176, 31, 31, 0.752) 8px 9px 4px 4px;
   border: none;
   transform: scale3d(1.1, 1.1, 1.1);
-  transition: tranform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 main div:nth-child(1) img:hover {
   box-shadow: none;
@@ -239,7 +241,7 @@ main div:nth-child(2) img {
   box-shadow: rgba(218, 233, 10, 0.842) 8px 9px 4px 4px;
   border: none;
   transform: scale3d(1.1, 1.1, 1.1);
-  transition: tranform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 main div:nth-child(2) img:hover {
   box-shadow: none;
@@ -250,7 +252,7 @@ main div:nth-child(3) img {
   box-shadow: rgb(0, 0, 234) 8px 9px 4px 4px;
   border: none;
   transform: scale3d(1.1, 1.1, 1.1);
-  transition: tranform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 main div:nth-child(3) img:hover {
   box-shadow: none;
@@ -261,7 +263,7 @@ main div:nth-child(4) img {
   box-shadow: rgba(20, 140, 20, 0.914) 8px 9px 4px 4px;
   border: none;
   transform: scale3d(1.1, 1.1, 1.1);
-  transition: tranform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 main div:nth-child(4) img:hover {
   box-shadow: none;
