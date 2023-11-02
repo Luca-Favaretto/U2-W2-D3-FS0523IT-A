@@ -186,9 +186,18 @@ header div div div {
   padding: 2em;
 }
 header div div div h1 {
+  animation: fade-in 0.5s ease-in-out;
   padding: 1em;
   color: #f4f4f4;
   font-size: 3em;
+}
+@keyframes fade-in {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 header div div div p {
   line-height: 1.2;
@@ -197,12 +206,12 @@ header div div img {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 8px 9px 4px 4px;
   border: 1px solid white;
-  transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1, 1, 1);
   transition: transform 0.3s ease;
 }
 header div div img:hover {
   box-shadow: none;
-  transform: scale3d(1, 1, 1);
+  transform: scale3d(0.9, 0.9, 0.9);
 }
 header div > button {
   display: inline-block;
@@ -213,12 +222,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  padding: 2em;
+  padding: 2rem;
 }
 main div {
   display: flex;
   flex-wrap: wrap;
-  width: 23%;
+  width: 22%;
 }
 main div img {
   -o-object-fit: cover;
@@ -229,43 +238,43 @@ main div:nth-child(1) img {
   border-radius: 10px;
   box-shadow: rgba(176, 31, 31, 0.752) 8px 9px 4px 4px;
   border: none;
-  transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1, 1, 1);
   transition: transform 0.3s ease;
 }
 main div:nth-child(1) img:hover {
   box-shadow: none;
-  transform: scale3d(1, 1, 1);
+  transform: scale3d(0.9, 0.9, 0.9);
 }
 main div:nth-child(2) img {
   border-radius: 10px;
   box-shadow: rgba(218, 233, 10, 0.842) 8px 9px 4px 4px;
   border: none;
-  transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1, 1, 1);
   transition: transform 0.3s ease;
 }
 main div:nth-child(2) img:hover {
   box-shadow: none;
-  transform: scale3d(1, 1, 1);
+  transform: scale3d(0.9, 0.9, 0.9);
 }
 main div:nth-child(3) img {
   border-radius: 10px;
   box-shadow: rgb(0, 0, 234) 8px 9px 4px 4px;
   border: none;
-  transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1, 1, 1);
   transition: transform 0.3s ease;
 }
 main div:nth-child(3) img:hover {
   box-shadow: none;
-  transform: scale3d(1, 1, 1);
+  transform: scale3d(0.9, 0.9, 0.9);
 }
 main div:nth-child(4) img {
   border-radius: 10px;
   box-shadow: rgba(20, 140, 20, 0.914) 8px 9px 4px 4px;
   border: none;
-  transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1, 1, 1);
   transition: transform 0.3s ease;
 }
 main div:nth-child(4) img:hover {
   box-shadow: none;
-  transform: scale3d(1, 1, 1);
+  transform: scale3d(0.9, 0.9, 0.9);
 }/*# sourceMappingURL=style.css.map */

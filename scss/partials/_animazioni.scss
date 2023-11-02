@@ -1,5 +1,12 @@
-@mixin fadeIn() {
-  transform: translateX(-);
+@mixin fadeIn($translate: -50px, $translateX: 0px, $delay: 0.5) {
+  animation: fade-in $delay ease-in-out;
+
   @keyframes fade-in {
+    from {
+      transform: translateY($translate);
+    }
+    to {
+      transform: translateY($translateX);
+    }
   }
 }

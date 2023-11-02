@@ -45,6 +45,7 @@ header {
       div {
         padding: 2em;
         h1 {
+          @include fadeIn(-50px, 0px, 0.5s);
           @include customTitle($text-color);
         }
         p {
@@ -65,9 +66,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
+  padding: 2rem;
 
   div {
-    @include grid($widht: 25%);
+    @include grid($widht: 22%);
   }
 
   div:nth-child(1) img {
