@@ -221,13 +221,12 @@ header div > button {
 main {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
   padding: 2rem;
 }
 main div {
   display: flex;
   flex-wrap: wrap;
-  width: 22%;
+  width: 25%;
 }
 main div img {
   -o-object-fit: cover;

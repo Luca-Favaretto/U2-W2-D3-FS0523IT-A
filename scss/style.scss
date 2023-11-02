@@ -65,11 +65,11 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
+
   padding: 2rem;
 
   div {
-    @include grid($widht: 22%);
+    @include grid($widht: 25%);
   }
 
   div:nth-child(1) img {
