@@ -164,6 +164,9 @@ nav > div > ul {
 nav > div > ul > li {
   display: inline;
 }
+nav > div > ul > li > a {
+  text-decoration: none;
+}
 nav > div img {
   height: 80px;
 }
@@ -187,6 +190,20 @@ header div div div h1 {
   color: #f4f4f4;
   font-size: 3em;
 }
+header div div div p {
+  line-height: 1.2;
+}
+header div div img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 8px 9px 4px 4px;
+  border: 1px solid white;
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: tranform 0.3s ease;
+}
+header div div img:hover {
+  box-shadow: none;
+  transform: scale3d(1, 1, 1);
+}
 header div > button {
   display: inline-block;
   margin-inline: 3em;
@@ -205,13 +222,48 @@ main div img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main div img:nth-child(1) {
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 8px 9px 4px 4px;
-  border: 1px solid black;
+  box-shadow: rgba(176, 31, 31, 0.752) 8px 9px 4px 4px;
+  border: none;
   transform: scale3d(1.1, 1.1, 1.1);
   transition: tranform 0.3s ease;
 }
-main div img:hover {
+main div img:nth-child(1):hover {
+  box-shadow: none;
+  transform: scale3d(1, 1, 1);
+}
+main div img:nth-child(2) {
+  border-radius: 10px;
+  box-shadow: rgba(218, 233, 10, 0.842) 8px 9px 4px 4px;
+  border: none;
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: tranform 0.3s ease;
+}
+main div img:nth-child(2):hover {
+  box-shadow: none;
+  transform: scale3d(1, 1, 1);
+}
+main div img:nth-child(3) {
+  border-radius: 10px;
+  box-shadow: rgb(0, 0, 234) 8px 9px 4px 4px;
+  border: none;
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: tranform 0.3s ease;
+}
+main div img:nth-child(3):hover {
+  box-shadow: none;
+  transform: scale3d(1, 1, 1);
+}
+main div img:nth-child(4) {
+  border-radius: 10px;
+  box-shadow: rgba(20, 140, 20, 0.914) 8px 9px 4px 4px;
+  border: none;
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: tranform 0.3s ease;
+}
+main div img:nth-child(4):hover {
   box-shadow: none;
   transform: scale3d(1, 1, 1);
 }/*# sourceMappingURL=style.css.map */

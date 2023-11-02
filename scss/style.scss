@@ -24,6 +24,7 @@ nav {
         display: inline;
 
         > a {
+          text-decoration: none;
         }
       }
     }
@@ -40,13 +41,18 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+
       div {
         padding: 2em;
         h1 {
           @include customTitle($text-color);
         }
         p {
+          line-height: 1.2;
         }
+      }
+      img {
+        @include floating($border: 1px solid white);
       }
     }
     > button {
@@ -63,12 +69,35 @@ main {
 
   div {
     width: 48%;
-
     img {
       width: 100%;
 
       object-fit: cover;
-      @include floating();
+    }
+
+    img:nth-child(1) {
+      @include floating(
+        $border: none,
+        $box-shadow: rgba(176, 31, 31, 0.752) 8px 9px 4px 4px
+      );
+    }
+    img:nth-child(2) {
+      @include floating(
+        $border: none,
+        $box-shadow: rgba(218, 233, 10, 0.842) 8px 9px 4px 4px
+      );
+    }
+    img:nth-child(3) {
+      @include floating(
+        $border: none,
+        $box-shadow: rgba(0 0 234 / 1) 8px 9px 4px 4px
+      );
+    }
+    img:nth-child(4) {
+      @include floating(
+        $border: none,
+        $box-shadow: rgba(20, 140, 20, 0.914) 8px 9px 4px 4px
+      );
     }
   }
 }
