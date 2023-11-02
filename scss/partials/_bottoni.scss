@@ -1,0 +1,7 @@
+@mixin dinamicBtn($color: white) {
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+  border-radius: 50%;
+  background-color: $color;
+}

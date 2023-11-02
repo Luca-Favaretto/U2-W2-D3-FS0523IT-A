@@ -1,0 +1,15 @@
+@mixin floating(
+  $border-radius: 10px,
+  $box-shadow: rgba(0, 0, 0, 0.1) 8px 9px 4px 4px,
+  $border: 1px solid black
+) {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  border: $border;
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: tranform 0.3s ease;
+  &:hover {
+    box-shadow: none;
+    transform: scale3d(1, 1, 1);
+  }
+}

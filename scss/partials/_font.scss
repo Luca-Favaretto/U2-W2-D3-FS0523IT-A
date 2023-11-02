@@ -1,0 +1,14 @@
+$my-text-font: "Arial", sans-serif;
+$my-titol-font: "Operator Mono";
+
+@for $i from 1 through 10 {
+  .font-size-#{$i} {
+    font-size: $i * 0.4em;
+  }
+}
+
+@mixin customTitle($color: red, $font-size: 3em) {
+  padding: 1em;
+  color: $color;
+  font-size: $font-size;
+}

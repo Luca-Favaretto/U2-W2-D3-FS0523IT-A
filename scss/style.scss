@@ -1,0 +1,74 @@
+@import "./partials/animazioni";
+@import "./partials/bottoni";
+@import "./partials/colori";
+@import "./partials/font";
+@import "./partials/mixins";
+@import "./partials/reset";
+@import "./partials/spaziature";
+
+@for $i from 1 through length($btn-color) {
+  .btn-#{$i} {
+    @include dinamicBtn(nth($btn-color, $i));
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $text-color;
+  > div {
+    > ul {
+      display: flex;
+      > li {
+        display: inline;
+
+        > a {
+        }
+      }
+    }
+    img {
+      height: 80px;
+    }
+  }
+}
+header {
+  background-color: $bg-hero-color;
+  div {
+    display: flex;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      div {
+        padding: 2em;
+        h1 {
+          @include customTitle($text-color);
+        }
+        p {
+        }
+      }
+    }
+    > button {
+      display: inline-block;
+      margin-inline: 3em;
+    }
+  }
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+
+  div {
+    width: 48%;
+
+    img {
+      width: 100%;
+
+      object-fit: cover;
+      @include floating();
+    }
+  }
+}
